@@ -1,0 +1,12 @@
+[service]
+name = "railway-flowise-ai"
+build = "npm install && npm run build"
+start = "npm start"
+
+[deploy]
+# Specify the commit SHA you want to deploy
+commit_sha = "64d9de205f67fd975a44298bbfebd336f8c42ade"
+
+[env]
+# Environment variables for the deployment
+DEPLOY_COMMIT_SHA = "64d9de205f67fd975a44298bbfebd336f8c42ade"
